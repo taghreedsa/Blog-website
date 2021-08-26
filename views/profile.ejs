@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="/css/stylewhyus.css">
+ 
+</head>
+<body style="margin-top: 50px;">
+    <header  >
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a class="navbar-brand text-uppercase  Home-nav "  href="/">Alpha</a>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text1" >
+    
+                        <li class="nav-item">
+                            <a class="nav-link About-nav text1" href="/">About</a>
+                        </li>
+                        <li class="nav-item nav-clor">
+                            <a class="nav-link why-nav text1" href="/">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact-nav text1" href="/">Contact Us</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link contact-nav text1" href="/articles/">  Articles </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact-nav text1" href="/logout">Logout </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+      </nav>
+    </header>
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+            <div class="container">    
+                  <div class="row">
+                      <div class="panel panel-default">
+                      <div class="panel-heading">  <h4 >User Profile</h4></div>
+                       <div class="panel-body">
+                      <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+                       <img alt="User Pic" src="<%= user.image %> " id="profile-image1" class="img-circle img-responsive"> 
+                     
+                 
+                      </div>
+                      <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8" >
+                          <div class="container" >
+                            <h2><%= user.name %> </h2>
+                            <hr>
+                            <h3> <%= user.blog %> </h3>
+                          
+                           
+                          </div>
+                           <hr>
+                          <ul class="container details" >
+                              <h4> Contact info </h4>
+                              <li><p><span class="glyphicon glyphicon-user one" style="width:50px;"></span><%= user.twitter %> </p></li>
+                            <li><p><span class="glyphicon glyphicon-envelope one" style="width:50px;"></span><%= user.email %> </p></li>
+                        
+                          </ul>
+                          
+                         
+                          <button type="button" class="btn btn-outline-light btn-lg" style="width: 200px;"
+                          ><a href="/profiles/<%= user.id %>/editprofile" style="text-decoration:none ; color: black;"> EDIT</a></button>
+                          <!-- <a href="/logout"> logout</a> -->
+                          <button type="button" class="btn btn-outline-light btn-lg" style="width: 200px;"
+                          ><a href="/articles/" style="text-decoration:none ; color: black;">  My Blog</a></button>
+
+                          
+              
+                      </div>
+                </div>
+            </div>
+            
+            </div>
+            
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/stylewhyus.css">
+
+  <title>Blog</title>
+</head>
+<header  >
+  <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+          <a class="navbar-brand text-uppercase  Home-nav "  href="/">Alpha</a>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text1" >
+
+                  <li class="nav-item">
+                      <a class="nav-link About-nav text1" href="/">About</a>
+                  </li>
+                  <li class="nav-item nav-clor">
+                      <a class="nav-link why-nav text1" href="/">Why Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link contact-nav text1" href="/">Contact Us</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link contact-nav text1" href="/profile"> My Profile </a>
+                </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link contact-nav text1" href="/articles/">  Go To Article </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <a class="nav-link contact-nav text1" href="/logout">Logout </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+</nav>
+</header>
+<body>
+  <div class="container">
+    <h1 class="mb-4">New Article</h1>
+    <form action="/articles" method="POST" >
+<div class="form-group">
+    <label for="title">Title</label>
+    <input  required  type="text" name="title" id="title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea name="description" id="description" class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="markdown">Markdown</label>
+    <textarea required name="markdown" id="markdown" class="form-control"></textarea>
+  </div>
+
+  
+  
+  <a href="/articles/" class="btn btn-secondary">Cancel</a>
+  <button type="submit" class="btn btn-primary">submit</button>
+  </div>
+</form>
+
+
+</body>
+</html>
